@@ -3,5 +3,29 @@
 // ==========================================================================
 
 * {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: $font-family--primary;
+	font-size: $base__font-size;
 	margin: 0;
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+p {
+	line-height: $base__line;
+}
+
+button {
+	border: none;
+	webkit-appearance: none;
+}
+
+input {
+	border: none;
 }

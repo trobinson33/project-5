@@ -1,3 +1,47 @@
 // ==========================================================================
 // Extends
 // ==========================================================================
+
+// Center alignment
+
+%center-align {
+	text-align: center;
+}
+
+// Center elements
+
+.centered {
+  float: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// Clearfix
+
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Buttons
+
+%btn {
+  padding: 15px 30px;
+  border: 0;
+  border-radius : $br--default;
+  color: $white;
+  text-transform: uppercase;
+  font-size : em(14px);
+  font-weight: $font-weight--medium;
+  transition: opacity $trns-duration;
+  display: block;
+  &:hover {
+    opacity: .75;
+  }
+  &:active {
+    opacity: initial;
+  }
+}
