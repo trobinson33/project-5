@@ -9,12 +9,21 @@
 	}
 
 	&__item {
-
+		&:first-of-type a{
+				background-color: $color-primary;
+				color: $white;
+		}
 		a {
+			border-radius: $br--default;
 			color: palette(black);
+			font-weight: $font-weight--light;
 			display: block;
+			padding: em(17px);
 			text-align: center;
-			text-decoration: none;	
+			text-decoration: none;
+
+
+
 		}
 	}
 }

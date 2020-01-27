@@ -49,7 +49,10 @@
     
     // Generate column modifier classes
     &--#{$i} {
-      width: percentage($target / $context);
+    	width: 100%;
+    	@include mq(large) {
+	      width: percentage($target / $context);
+	    }
     }
   }
 }

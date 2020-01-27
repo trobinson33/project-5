@@ -2,6 +2,9 @@
 // Grid
 // ==========================================================================
 
+.container {
+  padding: em(40px) em(16px);
+}
 .grid__row {
 	@extend %clearfix;
 	@extend .centered;
