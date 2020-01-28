@@ -5,7 +5,7 @@
 .nav {
 
 	@include mq(large){
-		@include flexy($just: flex-end);
+		@include flexy($just: center);
 	}
 
 	&__item {
@@ -22,8 +22,10 @@
 			text-align: center;
 			text-decoration: none;
 
-
-
+			@include mq(large){
+				padding: em(10px);
+				margin: 0 em(16px);
+			}
 		}
 	}
 }

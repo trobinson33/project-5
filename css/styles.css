@@ -26,6 +26,19 @@
   [class^="btn--"]:active {
     opacity: initial; }
 
+.headline--primary {
+  color: #58e1c1;
+  font-weight: 700;
+  font-size: em(42px);
+  line-height: 1.0952380952;
+  margin-top: 0; }
+
+.headline--secondary {
+  color: palette(grey, light);
+  letter-spacing: 1px;
+  font-weight: 100;
+  font-size: em(24px); }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -355,17 +368,18 @@ input {
   border: none; }
 
 .container {
-  padding: 2.2222222222em 0.8888888889em; }
+  padding: 0 0.8888888889em; }
 
 .grid__row {
   display: flex;
   flex-direction: column;
+  padding: 2.2222222222em 0;
   width: 90%; }
   [class*="grid_col--"] > .grid__row {
     width: 100%; }
   @media (min-width: 1101px) {
     .grid__row {
-      max-width: 1140px;
+      max-width: 1110px;
       flex-direction: row;
       align-items: center; } }
 
@@ -460,7 +474,7 @@ input {
 @media (min-width: 1101px) {
   .nav {
     display: flex;
-    justify-content: flex-end; } }
+    justify-content: center; } }
 .nav__item:first-of-type a {
   background-color: #58e1c1;
   color: #fff; }
@@ -472,15 +486,15 @@ input {
   padding: 0.9444444444em;
   text-align: center;
   text-decoration: none; }
+  @media (min-width: 1101px) {
+    .nav__item a {
+      padding: 0.5555555556em;
+      margin: 0 0.8888888889em; } }
 
 .img--logo {
   display: block;
   text-align: center;
   margin: 0 auto; }
-  @media (min-width: 1101px) {
-    .img--logo {
-      text-align: left;
-      margin: 0; } }
 
 .btn--default {
   background-color: #51ddfc; }

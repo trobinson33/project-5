@@ -3,13 +3,14 @@
 // ==========================================================================
 
 .container {
-  padding: em(40px) em(16px);
+  padding: 0 em(16px);
 }
 .grid__row {
 	@extend %clearfix;
 	@extend .centered;
 	@include flexy($dir: column);
-	width: 90%;
+	padding: em(40px) 0;
+  width: 90%;
 
 	// Make nested grid Container 100%;
 
