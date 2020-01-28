@@ -1,3 +1,37 @@
 // ==========================================================================
 // Forms
 // ==========================================================================
+
+.form {
+	@include e(label) {
+		@include m(hidden) {
+			@extend .srt;
+		}
+		display: block;
+		margin-bottom: em(10px);
+	}
+
+	@include e(input) {
+		font-size : em(16px);
+		margin: em(16px) em(15px);
+		border-bottom: 6px solid $color-primary;
+		background: $white;
+		color: palette(black, dark);
+		font-weight: $font-weight--medium;
+		display: inline-block;
+		padding: em(12px);
+		width: 100%;
+		&:focus {	
+			border-color: $color-primary;
+		}
+
+		&:placeholder {
+
+		}
+	}
+
+	@include e(btn) {
+		@extend %btn;
+		background: $color-primary;
+	}
+}

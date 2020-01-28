@@ -59,7 +59,20 @@
 %hdln-sec {
   color: palette(grey, light);
   letter-spacing: $letter-space;
-  font-weight: $font-weight--thin;
-  font-size: em(24px);
+  font-weight: $font-weight--light;
+  font-size: em(18px);
   
+}
+
+// Screen reader text
+
+.srt {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
