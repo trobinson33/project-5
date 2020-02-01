@@ -3,6 +3,10 @@
 // ==========================================================================
 
 .form {
+	.img--avatar {
+		display: block;
+		margin: em(20px) auto;
+	}
 	@include e(label) {
 		@include m(hidden) {
 			@extend .srt;
@@ -12,26 +16,22 @@
 	}
 
 	@include e(input) {
-		font-size : em(16px);
-		margin: em(16px) em(15px);
+		font-size : em(15px);
+		margin: em(24px) auto;
 		border-bottom: 6px solid $color-primary;
 		background: $white;
 		color: palette(black, dark);
 		font-weight: $font-weight--medium;
-		display: inline-block;
+		display: block;
 		padding: em(12px);
-		width: 100%;
+		width: 94%;
 		&:focus {	
 			border-color: $color-primary;
 		}
 
-		&:placeholder {
-
-		}
 	}
 
-	@include e(btn) {
-		@extend %btn;
-		background: $color-primary;
+	button {
+		width: 100%;
 	}
 }

@@ -9,6 +9,7 @@
 body {
 	font-family: $font-family--primary;
 	font-size: $base__font-size;
+	font-weight: $font-weight--medium;
 	margin: 0;
 	color: palette(black, light);
 }
@@ -20,6 +21,7 @@ ul {
 
 p {
 	line-height: $base__line;
+	font-weight: $font-weight--light;
 }
 
 button {

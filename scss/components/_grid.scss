@@ -9,8 +9,13 @@
 	@extend %clearfix;
 	@extend .centered;
 	@include flexy($dir: column);
-	padding: em(40px) 0;
-  width: 90%;
+  padding: em(36px) 0;
+  width: 84%;
+  @include mq(large){
+    padding: em(48px) 0;
+    width: 90%;
+  }
+  
 
 	// Make nested grid Container 100%;
 
@@ -22,7 +27,6 @@
 	@include mq(large) {
 		max-width: $g-cont-max-w;
 		flex-direction: row;
-		align-items: center;
 	}
 }
 
@@ -49,4 +53,6 @@
       float: right;
     }
   }
+
+  
 }

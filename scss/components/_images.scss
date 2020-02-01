@@ -2,10 +2,19 @@
 // Images
 // ==========================================================================
 
-.img--logo {
-	display: block;
-  text-align: center;
-  margin: 0 auto;
+.img {
 
-  
+	@include m(logo) {
+		display: block;
+		text-align: center;
+		margin: 0 auto;
+
+		
+	}
+
+	@include m(frame) {
+		border: 1px solid palette(grey, x-light);
+		padding: 10px;
+	}
 }
+

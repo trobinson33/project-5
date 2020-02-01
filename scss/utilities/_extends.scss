@@ -51,9 +51,8 @@
 %hdln-prim {
   color: $color-primary;
   font-weight: $font-weight--bold;
-  font-size: em(42px);
-  line-height: (46px/42px);
-  margin-top: 0;
+  font-size: em(30.6px);
+  margin: em(12px) 0 em(20px) em(12px);
 }
 
 %hdln-sec {
@@ -61,7 +60,23 @@
   letter-spacing: $letter-space;
   font-weight: $font-weight--light;
   font-size: em(18px);
+  margin: 0;
+  max-width: $g-cont-max-w;
   
+}
+
+// Links
+%link {
+  color: $color-secondary;
+  font-weight: $font-weight--medium;
+  text-decoration: none;
+}
+
+// Image
+
+%image {
+  max-width: 100%;
+  height: auto;
 }
 
 // Screen reader text
