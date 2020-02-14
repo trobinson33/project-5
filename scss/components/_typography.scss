@@ -10,6 +10,15 @@
 
 	&--secondary {
 		@extend %hdln-sec;
+
+		&:not(:first-child) {
+			margin: 0 auto;
+			width: 84%;
+
+			@include mq(large) {
+				width: 100%;
+			}
+		}
 	}
 }
 

@@ -28,17 +28,26 @@
 		max-width: $g-cont-max-w;
 		flex-direction: row;
 	}
+
+
 }
 
 // Calculate grid columns
 .grid__col{
+  
   @include mq(medium) {
     @include g-columns;
   }
+
+  
+  @include column-colors($column-colors);
+  
+
 }
 
 // Column styles
 [class^="grid__col--"] {
+
   @include mq(small) {
     margin-top: em(12px);
     margin-bottom: em(12px);
@@ -53,6 +62,6 @@
       float: right;
     }
   }
-
-  
 }
+
+

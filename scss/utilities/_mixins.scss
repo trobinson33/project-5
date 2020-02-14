@@ -58,7 +58,6 @@
 }
 
 // Generate modifier color classes
-
 @mixin bg-colors($map) {
 	@each $theme, $color in $map {
 		&--#{$theme} {
@@ -66,6 +65,20 @@
 		}
 	}
 }
+
+@mixin column-colors($map) {
+	@each $number, $color in $map {
+		&--#{$number} {
+			&.theme__colors {
+			background-color: $color;
+			border-radius: $br--default;
+			text-align: center;
+			padding: 10px 0;
+			}   
+		}
+	}
+}
+
 
 // Adjacent sibling margins
 

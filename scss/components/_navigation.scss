@@ -9,23 +9,6 @@
 	}
 
 	&__item {
-		&:first-of-type a{
-				background-color: $color-primary;
-				color: $white;
-		}
-		a {
-			border-radius: $br--default;
-			color: palette(black);
-			font-weight: $font-weight--light;
-			display: block;
-			padding: em(17px);
-			text-align: center;
-			text-decoration: none;
-
-			@include mq(large){
-				padding: em(10px);
-				margin: 0 em(16px);
-			}
-		}
+		@extend %nav_items;
 	}
 }

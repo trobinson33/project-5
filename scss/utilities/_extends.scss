@@ -29,13 +29,13 @@
 // Buttons
 
 %btn {
-  padding: 15px 30px;
+  padding: 15px 55px;
   border: 0;
   border-radius : $br--default;
   color: $white;
   text-transform: uppercase;
   font-size : em(14px);
-  font-weight: $font-weight--medium;
+  font-weight: $font-weight--bold;
   transition: opacity $trns-duration;
   display: block;
   &:hover {
@@ -77,6 +77,27 @@
 %image {
   max-width: 100%;
   height: auto;
+}
+
+%nav_items {
+  &:first-of-type a{
+        background-color: $color-primary;
+        color: $white;
+    }
+    a {
+      border-radius: $br--default;
+      color: palette(black);
+      font-weight: $font-weight--light;
+      display: block;
+      padding: em(17px);
+      text-align: center;
+      text-decoration: none;
+
+      @include mq(large){
+        padding: em(10px);
+        margin: 0 em(16px);
+      }
+    }
 }
 
 // Screen reader text

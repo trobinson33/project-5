@@ -25,8 +25,13 @@ $emerald        : #63cc82;
 $sunglo					: #e4757a;
 $coral          : #ff784f;
 $purple-majesty : #9279c3;
-
-
+$riptide 				: #80e8d1;
+$shakesphere		: #3fabca;
+$french-lilac		: #deb2ee;
+$vista-blue			: #88d9a0;
+$sea-pink				: #ec9fa3;
+$vivid-tangerine: #fd9f85;
+$anakiwa				: #7ee6fd;
 // Color Usage
 
 $color-primary   : $viking;
@@ -59,6 +64,17 @@ $ui-colors: (
 	error   : $sunglo,
 	warning : $coral,
 	info    : $purple-majesty
+);
+
+$column-colors: (
+	2 : $color-secondary,
+	3 : $french-lilac,
+	4 : $anakiwa,
+	5 : $vista-blue,
+	6 : $shakesphere,
+	7 : $sea-pink,
+	8 : $vivid-tangerine,
+	12 : $riptide,
 );
 
 // Text
