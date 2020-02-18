@@ -72,8 +72,12 @@
 			&.theme__colors {
 			background-color: $color;
 			border-radius: $br--default;
-			text-align: center;
-			padding: 10px 0;
+			text-align: left;
+			padding: 10px;
+
+			@include mq(large){
+				text-align: center;
+			}
 			}   
 		}
 	}

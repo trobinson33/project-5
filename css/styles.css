@@ -4,7 +4,8 @@
 .centered, .grid__row {
   float: none;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  width: 100%; }
 
 .grid__row:after {
   content: "";
@@ -44,6 +45,10 @@
   color: #51ddfc;
   font-weight: 400;
   text-decoration: none; }
+
+.img--logo, .img--frame {
+  max-width: 100%;
+  height: auto; }
 
 .nav__item:first-of-type a {
   background-color: #58e1c1;
@@ -402,16 +407,15 @@ input {
   border: none; }
 
 .container {
-  padding: 0 0.8888888889em; }
+  padding: 1.3888888889em 0.8888888889em; }
 
 .grid__row {
   display: flex;
   flex-direction: column;
-  padding: 2em 0;
+  padding: 1.3888888889em 0;
   width: 84%; }
   @media (min-width: 1101px) {
     .grid__row {
-      padding: 2.6666666667em 0;
       width: 90%; } }
   [class*="grid_col--"] > .grid__row {
     width: 100%; }
@@ -496,58 +500,83 @@ input {
 .grid__col--2.theme__colors {
   background-color: #51ddfc;
   border-radius: 0.2em;
-  text-align: center;
-  padding: 10px 0; }
+  text-align: left;
+  padding: 10px; }
+  @media (min-width: 1101px) {
+    .grid__col--2.theme__colors {
+      text-align: center; } }
 .grid__col--3.theme__colors {
   background-color: #deb2ee;
   border-radius: 0.2em;
-  text-align: center;
-  padding: 10px 0; }
+  text-align: left;
+  padding: 10px; }
+  @media (min-width: 1101px) {
+    .grid__col--3.theme__colors {
+      text-align: center; } }
 .grid__col--4.theme__colors {
   background-color: #7ee6fd;
   border-radius: 0.2em;
-  text-align: center;
-  padding: 10px 0; }
+  text-align: left;
+  padding: 10px; }
+  @media (min-width: 1101px) {
+    .grid__col--4.theme__colors {
+      text-align: center; } }
 .grid__col--5.theme__colors {
   background-color: #88d9a0;
   border-radius: 0.2em;
-  text-align: center;
-  padding: 10px 0; }
+  text-align: left;
+  padding: 10px; }
+  @media (min-width: 1101px) {
+    .grid__col--5.theme__colors {
+      text-align: center; } }
 .grid__col--6.theme__colors {
   background-color: #3fabca;
   border-radius: 0.2em;
-  text-align: center;
-  padding: 10px 0; }
+  text-align: left;
+  padding: 10px; }
+  @media (min-width: 1101px) {
+    .grid__col--6.theme__colors {
+      text-align: center; } }
 .grid__col--7.theme__colors {
   background-color: #ec9fa3;
   border-radius: 0.2em;
-  text-align: center;
-  padding: 10px 0; }
+  text-align: left;
+  padding: 10px; }
+  @media (min-width: 1101px) {
+    .grid__col--7.theme__colors {
+      text-align: center; } }
 .grid__col--8.theme__colors {
   background-color: #fd9f85;
   border-radius: 0.2em;
-  text-align: center;
-  padding: 10px 0; }
+  text-align: left;
+  padding: 10px; }
+  @media (min-width: 1101px) {
+    .grid__col--8.theme__colors {
+      text-align: center; } }
 .grid__col--12.theme__colors {
   background-color: #80e8d1;
   border-radius: 0.2em;
-  text-align: center;
-  padding: 10px 0; }
+  text-align: left;
+  padding: 10px; }
+  @media (min-width: 1101px) {
+    .grid__col--12.theme__colors {
+      text-align: center; } }
 
-@media (min-width: 1px) and (max-width: 768px) {
-  [class^="grid__col--"] {
-    margin-top: 0.6666666667em;
-    margin-bottom: 0.6666666667em; } }
-@media (min-width: 769px) {
-  [class^="grid__col--"] {
-    float: left;
-    min-height: 1px;
-    padding-left: 10px;
-    padding-right: 10px; }
-    [class^="grid__col--"] + [class^="grid__col--"] {
-      margin-left: 2%; }
-    [class^="grid__col--"]:last-of-type {
-      float: right; } }
+[class^="grid__col--"] {
+  margin-top: 0.1111111111em;
+  margin-bottom: 0.1111111111em; }
+  @media (min-width: 1101px) {
+    [class^="grid__col--"] {
+      float: left;
+      min-height: 1px;
+      margin-top: 0;
+      margin-bottom: 0;
+      padding-left: 10px;
+      padding-right: 10px; }
+      [class^="grid__col--"] + [class^="grid__col--"] {
+        margin-left: 2%; }
+      [class^="grid__col--"]:last-of-type {
+        float: right; } }
 
 .headline--secondary:not(:first-child) {
   margin: 0 auto;
@@ -581,6 +610,9 @@ input {
 .img--frame {
   border: 1px solid #d6d7d9;
   padding: 10px; }
+.img--avatar {
+  display: block;
+  margin: 0 auto; }
 
 .btn--default {
   background-color: #51ddfc; }

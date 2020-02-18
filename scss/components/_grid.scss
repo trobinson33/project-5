@@ -3,16 +3,15 @@
 // ==========================================================================
 
 .container {
-  padding: 0 em(16px);
+  padding: em(25px) em(16px);
 }
 .grid__row {
 	@extend %clearfix;
 	@extend .centered;
 	@include flexy($dir: column);
-  padding: em(36px) 0;
+  padding: em(25px) 0;
   width: 84%;
   @include mq(large){
-    padding: em(48px) 0;
     width: 90%;
   }
   
@@ -48,14 +47,16 @@
 // Column styles
 [class^="grid__col--"] {
 
-  @include mq(small) {
-    margin-top: em(12px);
-    margin-bottom: em(12px);
-  }
-  @include mq(medium) {
+
+  margin-top: em(2px);
+  margin-bottom: em(2px);
+  
+  @include mq(large) {
     @include doubly(percentage($g-gutter-width / $context));    
     float: left;
     min-height: 1px;
+    margin-top: 0;
+    margin-bottom: 0;
     padding-left: 10px;
     padding-right: 10px;
     &:last-of-type {

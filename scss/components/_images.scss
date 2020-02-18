@@ -5,16 +5,23 @@
 .img {
 
 	@include m(logo) {
+		@extend %image;
 		display: block;
 		text-align: center;
 		margin: 0 auto;
-
+		
 		
 	}
 
 	@include m(frame) {
+		@extend %image;
 		border: 1px solid palette(grey, x-light);
 		padding: 10px;
+	}
+
+	@include m(avatar){
+		display: block;
+		margin: 0 auto;
 	}
 }
 
